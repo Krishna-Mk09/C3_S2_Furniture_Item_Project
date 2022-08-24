@@ -53,6 +53,7 @@ public class FurnitureItem {
     enum grade {
         GRADE1, GRADE2, GRADE3
     }
+
 }
 
 
