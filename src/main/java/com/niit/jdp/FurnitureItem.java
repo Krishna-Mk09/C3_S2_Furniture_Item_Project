@@ -9,7 +9,7 @@
 package com.niit.jdp;
 
 public class FurnitureItem {
-    double furnitureCode;
+    int furnitureCode;
     String furnitureType;
     String furnitureGrade;
     String furnitureColour;
@@ -17,9 +17,8 @@ public class FurnitureItem {
     double furniturePrice;
 
 
-    public FurnitureItem(double furniturePrice, double furnitureCode, String furnitureColour, String furnitureGrade, String furnitureType, String furnitureUsage) {
+    public FurnitureItem(int furnitureCode, String furnitureColour, String furnitureGrade, String furnitureType, String furnitureUsage) {
         this.furniturePrice = furniturePrice;
-        System.out.println(this.furniturePrice);
         this.furnitureCode = furnitureCode;
         this.furnitureColour = furnitureColour;
         this.furnitureGrade = furnitureGrade;
@@ -27,13 +26,10 @@ public class FurnitureItem {
         this.furnitureUsage = furnitureUsage;
     }
 
-    class FurnitureItemimpl {
-        public static void main(String[] args) {
-            FurnitureItem furnitureItem = new FurnitureItem();
-            furnitureItem.furnitureitem();
-
-
-        }
+    public FurnitureItem() {
     }
+
+
+}
 
 
