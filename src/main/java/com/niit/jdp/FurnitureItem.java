@@ -9,4 +9,10 @@
 package com.niit.jdp;
 
 public class FurnitureItem {
-}
+    double furnitureCode;
+    String furnitureType;
+    String furnitureGrade;
+    String furnitureColour;
+    String furnitureUsage;
+    double furniturePrice;
+
