@@ -17,7 +17,7 @@ public class FurnitureItem {
     double furniturePrice;
 
 
-    public furnitureItem(double furniturePrice, double furnitureCode, String furnitureColour, String furnitureGrade, String furnitureType, String furnitureUsage) {
+    public FurnitureItem(double furniturePrice, double furnitureCode, String furnitureColour, String furnitureGrade, String furnitureType, String furnitureUsage) {
         this.furniturePrice = furniturePrice;
         System.out.println(this.furniturePrice);
         this.furnitureCode = furnitureCode;
@@ -27,5 +27,13 @@ public class FurnitureItem {
         this.furnitureUsage = furnitureUsage;
     }
 
+    class FurnitureItemimpl {
+        public static void main(String[] args) {
+            FurnitureItem furnitureItem = new FurnitureItem();
+            furnitureItem.furnitureitem();
+
+
+        }
+    }
 
 
