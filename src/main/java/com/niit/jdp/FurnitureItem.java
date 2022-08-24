@@ -17,7 +17,7 @@ public class FurnitureItem {
     double furniturePrice;
 
 
-    public FurnitureItem(int furnitureCode, String furnitureColour, String furnitureGrade, String furnitureType, String furnitureUsage) {
+    public FurnitureItem(double furniturePrice, int furnitureCode, String furnitureColour, String furnitureGrade, String furnitureType, String furnitureUsage) {
         this.furniturePrice = furniturePrice;
         this.furnitureCode = furnitureCode;
         this.furnitureColour = furnitureColour;
@@ -26,12 +26,32 @@ public class FurnitureItem {
         this.furnitureUsage = furnitureUsage;
     }
 
-    public FurnitureItem() {
+    public void displayResult() {
+        System.out.println(this.furniturePrice);
+
     }
 
     public double calculateDiscountBasedOnUsage() {
-        int discount = 5;
-        return discount;
+        return this.furniturePrice - this.furniturePrice * 5 / 100;
+    }
+
+    enum type {
+        CHAIRS, CUPBOARDS, STOOLS, TABLES
+    }
+
+    enum colour {
+        RED, BLUE, GREEN
+    }
+
+    public FurnitureItem() {
+    }
+
+    enum usage {
+        INDOOR, OUTDOOR
+    }
+
+    enum grade {
+        GRADE1, GRADE2, GRADE3
     }
 }
 
