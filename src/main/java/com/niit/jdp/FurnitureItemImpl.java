@@ -9,4 +9,7 @@
 package com.niit.jdp;
 
 public class FurnitureItemImpl {
+    public static void main(String[] args) {
+
+    }
 }
