@@ -29,7 +29,10 @@ public class FurnitureItem {
     public FurnitureItem() {
     }
 
-
+    public double calculateDiscountBasedOnUsage() {
+        int discount = 5;
+        return discount;
+    }
 }
 
 
